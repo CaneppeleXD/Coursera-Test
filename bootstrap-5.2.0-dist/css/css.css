@@ -1,0 +1,72 @@
+@media (min-width: 992px) {
+    div {
+        width: 33.3%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    div {
+        width: 50%;
+    }
+    div.terceiro {
+        width: 100%;
+
+    }
+}
+    
+@media (max-width: 767px){
+    div {
+        width: 100%;
+    }
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    border: 10px solid white;
+    float: left;
+    box-sizing: border-box;
+}
+
+div > section {
+    border: 5px solid black;
+    height: 300px;
+    background-color: rgb(173, 169, 169);
+}
+
+section > section {
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    height: 25%;
+    width: 35%;
+    float: right;
+}
+
+.pink {
+    background-color: rgb(252, 150, 238);
+}
+
+.green {
+    background-color: chartreuse;
+}
+
+.blue {
+    background-color: deepskyblue;
+}
+
+p.food {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: -10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+p.texto {
+    clear: right;
+    padding: 10px;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
