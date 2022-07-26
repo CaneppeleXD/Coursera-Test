@@ -113,30 +113,7 @@ body {
 
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover {
     box-shadow: 0 1px 5px 1px #cccccc;
-}
- 
-#menu-tile {
-    background: url("../../images/menu.jpg");
-    background-position: top;
-}
-
-#specials-tile {
-    background: url("../../images/specials.jpg");
-    background-position: top;
-}
-
-#menu-tile span, #specials-tile span, #map-tile span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 1.6em;
-    text-transform: uppercase;
-    background-color: #000;
-    color: #fff;
-    opacity: .8;
-}
+} 
 
 @media (min-width: 1200px) {
     .container .jumbotron {
