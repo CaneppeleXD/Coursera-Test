@@ -110,8 +110,8 @@ $(function () {
             html = insertProperty(html, "short_name", categoryMenuItems.items[i].short_name);
             html = insertItemPrice(html, "price_small",  categoryMenuItems.items[i].small_price);
             html = insertPortionName(html, "small_portion_name", categoryMenuItems.items[i].small_portion_name);
-            html = insertItemPrice(html, "price_small",  categoryMenuItems.items[i].large_price);
-            html = insertPortionName(html, "small_portion_name", categoryMenuItems.items[i].large_portion_name);
+            html = insertItemPrice(html, "price_large",  categoryMenuItems.items[i].large_price);
+            html = insertPortionName(html, "large_portion_name", categoryMenuItems.items[i].large_portion_name);
             html = insertProperty(html, "name", categoryMenuItems.items[i].name);
             html = insertProperty(html, "description", categoryMenuItems.items[i].description);
 
