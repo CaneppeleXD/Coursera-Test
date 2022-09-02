@@ -37,6 +37,19 @@ $(function () {
         return string;
     }
 
+    var switchMenuActive = function(){
+        var classes = document.querySelector("#navhomebutton").className;
+        classes = classes.replace(new RegExp("active", "g"), "");
+        document.querySelector("#navhomebutton").className = classes;
+
+        
+        classes = document.querySelector("#navmenubutton").className;
+        if(classes.indexOf("active") == -1){
+            classes += " active";
+            document.querySelector("#navmenubutton").className = classes;
+        }
+    }
+
     document.addEventListener("DOMContentLoaded", function (event) {
         showLoading("#main-content");
 
@@ -53,6 +66,7 @@ $(function () {
     }
 
     function buildAndShowCategoriesHTML (categories) {
+        switchMenuActive();
         $utilajax.sendGetRequest(
             menu_categories,
             function (categoriesTitleHtml){
@@ -84,6 +98,7 @@ $(function () {
     }
 
     function buildAndShowMenuItemsHTML (categoryMenuItems){
+        switchMenuActive();
         $utilajax.sendGetRequest(
             menuItemsTitleHtml,
             function(menuItemsTitleHtml){
