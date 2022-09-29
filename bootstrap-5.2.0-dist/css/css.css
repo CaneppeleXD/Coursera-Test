@@ -103,6 +103,10 @@ body {
     background-color: #3F0C1F;
 }
 
+#carousel {
+    margin-bottom: 30px;
+}
+
 #menu-tile, #specials-tile, #map-tile {
     height: 250px;
     width: 100%;
